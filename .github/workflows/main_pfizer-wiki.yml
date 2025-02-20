@@ -39,6 +39,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     needs: build
     environment:
       name: 'Production'
